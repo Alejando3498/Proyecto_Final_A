@@ -1,0 +1,168 @@
+.menu{
+    border-radius: 8px;
+    width: 500px;
+    height: 385px;
+    margin:  40px 0px 0px 675px;
+
+    border: 3px solid black;
+
+    background-image: linear-gradient(
+        to bottom right,
+        #cdf12b 0%,
+        #39df4f 20%,
+        #31aed4 40%,
+        #db4fc4 60%,
+        #ff0037 80%
+    );
+
+    background-size: 200% 200%;
+
+    animation: movimiento 5s linear infinite alternate;
+}
+.letrero{
+    float: left;
+    margin: 0px 50px 0 100px;
+}
+a{
+    display: block;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 55px auto 15px;
+    margin: 0px auto 5px;
+    color: black;
+    text-decoration: none;
+}
+.flecha{
+    width: 60%;
+    margin: 15px 0 0 50px;
+}
+.izquierda{
+    float: left;
+}
+.N1{
+    border-radius: 25%;
+    border: 2px solid black;
+    margin: 10px 50px 0 20px;
+    width: 200px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.589);;
+}
+.N2{
+    border-radius: 25%;
+    border: 2px solid black;
+    margin: 10px 50px 0 70px;
+    width: 200px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.589);;
+}
+.N3{
+    border-radius: 25%;
+    border: 2px solid black;
+    width: 200px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.774);
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    width: 300px;
+    padding: 10px;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 3px solid black;
+    margin: 0px 0 10px 175px;
+    font-family:  sans-serif;
+    display: grid;
+    float: left;
+    place-content: center;
+    color: white;
+
+    background-image: linear-gradient(
+        to bottom right,
+        #cdf12b 0%,
+        #39df4f 20%,
+        #31aed4 40%,
+        #db4fc4 60%,
+        #ff0037 80%
+    );
+
+    background-size: 200% 200%;
+
+    animation: movimiento 5s linear infinite alternate;
+}
+header{
+    padding: 40px 0;
+    margin: 10px 150px;
+}
+
+.let1{
+    animation-name: letras;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: inline-block;
+}
+.let2{
+    animation-name: letras2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: inline-block;
+}
+@keyframes letras2{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-45deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(45deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
+}
+@keyframes letras{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(45deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(-45deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: translateY(-20%);
+    }
+}
+@keyframes movimiento{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
